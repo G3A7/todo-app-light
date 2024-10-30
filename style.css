@@ -1,0 +1,190 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    resize: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 150vh;
+}
+.input-dev{
+    max-width: 600px;
+    height: 130px;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 10px;
+    /* box-shadow: 0 0  10px #00000054; */
+    position: relative;
+}
+#inp-title{
+    display: inline-block;
+    width: 50%;
+    padding: 7px;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    box-shadow: 0 0  10px #00000054;
+     border-radius: 5px;
+}
+.btn-submit{
+    position: relative;
+    right: -10px;
+}
+#inp-details{
+    display: block;
+    box-shadow: 0 0  10px #00000054;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 98%;
+    height: 75%;
+    padding: 7px;
+}
+.container{
+    max-width: 600px;
+    height: 70vh;
+    margin: auto;
+    padding: 7px;
+    /* box-shadow: 0 0  10px #00000054; */
+    border-radius: 5px;
+    position: relative;
+}
+.container .box{
+    box-shadow: 0 0  10px #00000054;
+      width: 100%;
+      height: 200px;
+      padding: 5px;
+      margin-top: 10px;
+      border-radius: 5px;
+      opacity: 1;
+      position: relative;
+}
+.star{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+.star.active{
+    background-color: yellow;
+}
+
+.container .box>h1{
+    text-transform: capitalize;
+      border-bottom: 1px solid #000;
+}
+.container .box>p{
+    margin-top: 3px;
+    padding: 3px;
+    padding-left: 5px;
+     background-color: #DDD;
+    width: 100%;
+    height: 60%;
+    color: #000;
+    overflow-y: auto;
+    text-transform: capitalize;
+}
+button{
+    border-radius: 5px;
+    background-color: orangered;
+  border: none;
+  outline: none;
+  padding: 5px;
+  color: #FFF;
+  font-size: 15px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: .1s;
+}
+button:hover{
+    transform: scale(.9);
+}
+
+.container .box> .delete{
+            position: relative;
+            top: 5px;
+            background-color: red;
+}
+.container .box> .update{
+   position: absolute;
+   right: 4px;
+   bottom: 5px;
+}
+
+
+.div-pop,.pop-update{
+    width: 250px;
+    height: 120px;
+    padding: 7px;
+    position: absolute;
+    opacity: 0;
+    top: -20%;
+    left: 50%;
+    /* left: -150px; */
+    transform: translate(-50%,-50%);
+   transition: all 1s;   
+}
+
+.pop-update{
+    width: 350px;
+    height: 200px;
+}
+.pop-update .input-t{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid #0000;
+    margin-bottom: 10px;    
+    /* margin-bottom: 5px; */
+    /* border-bottom:1px solid #000 ; */
+}
+.pop-update > .input-d {
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    height: 100px;
+    /* margin-bottom: 5px; */
+    /* border-bottom:1px solid #000 ; */
+}
+.pop-update > .update-pop{
+    position: absolute;
+    bottom: 10px;
+}
+.pop-update > .btn-cancel-updata{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.div-pop >p
+{
+   margin-bottom: 10px;
+}
+.div-pop >.btn-del-ok,.btn-cancel
+{
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+.btn-cancel{
+    margin-left: 100px;
+}
+
+.div-pop.app,.pop-update.app{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px #00000059;
+    opacity: 1;
+}
+
